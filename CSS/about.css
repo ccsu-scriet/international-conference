@@ -1,0 +1,12 @@
+.container-fluid{
+    background-color: #e6f1f7; 
+    margin: 15px 0;
+}
+.container-fluid p{
+    text-align: justify;       
+}
+.container-fluid h1{
+    color: #14297a;
+    margin-top: 10px;
+    font-weight: 650;
+}

@@ -1,0 +1,77 @@
+.patron-photo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+}
+
+.patron-photo .card {
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    width: 20%;
+    min-width: 200px;
+    text-align: center;
+    border: none;
+}
+
+.patron-photo .card img {
+    width: 100%; 
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+.patron-photo p {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.patron-photo .post {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #14297a;
+}
+
+.patron-photo .name {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.patron-photo .university {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+/* Mobile View Adjustments */
+@media (max-width: 798px) {
+    .patron-photo {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .patron-photo .card {
+        width: 80%;
+    }
+
+    .patron-photo .card img {
+        width: 100%; 
+        height: auto; 
+    }
+    
+
+    .patron-photo .post {
+        font-size: 0.9rem;
+    }
+
+    .patron-photo .name {
+        font-size: 0.8rem;
+    }
+
+    .patron-photo .university {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,48 @@
+.carousel-caption h1, h3, h5{
+    text-shadow: 2px 2px 8px #141414;
+}
+
+.phone-view{
+    display: none;
+}
+
+.rolling-text{
+    background-color: #14297a;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.col .card:hover{
+    transform: translateY(-5px);
+}
+.col .main-card p span{
+    font-weight: bold;
+}
+
+@media(max-width: 798px){
+    .rolling-text{
+        background-color: #14297a;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size:10px ;
+    }
+
+    /* .phone-view{
+        display: none;
+    }
+    
+    .phone-view h1, h3, h5{
+        text-shadow: none;
+        text-align: center;
+    } */
+    .carousel-item img{
+        width: 100%;
+        height:150px
+    }
+    .col .main-card{
+        margin:auto;
+        margin-bottom: 10px;
+    }
+}

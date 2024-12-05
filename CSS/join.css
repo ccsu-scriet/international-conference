@@ -1,0 +1,75 @@
+
+.join-card {
+    margin: 40px 200px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    padding-bottom: 30px;
+    padding-top: 5px;
+    background-color: #f9f9f9; 
+}
+
+
+.join-photo-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.join-photo-card .card {
+    width: 15rem;
+    height: auto;
+    align-self: center;
+    text-align: center;
+    margin: 10px; 
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Card Image Styling */
+.join-photo-card .card img {
+    height: 200px;
+    width: 100%; 
+    object-fit: cover; 
+    border-bottom: 2px solid #ddd; 
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+
+.join-photo-card .card p {
+    font-size: 1.5rem;
+    font-weight: 550;
+    color: maroon;
+    margin-top: 10px;
+}
+
+/* Responsive Design for Phone View */
+@media (max-width: 798px) {
+    .join-card {
+        margin: 20px 10px; 
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+
+    .join-photo-card {
+        justify-content: center;
+    }
+
+    .join-photo-card .card {
+        width: 55%; 
+        margin-bottom: 15px; 
+    }
+
+    .join-photo-card .card img {
+       width: 200px;
+        height:180px ; 
+    }
+
+    .join-photo-card .card p {
+        font-size: 1.2rem; 
+    }
+}

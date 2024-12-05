@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assest/favicon.ico">
+    <title>CCS University | Conference and Events</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./CSS/advisory.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #14297a;
+            color: white;
+            padding: 10px 10px;
+        }
+
+        .header .logo img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        .logo{
+            padding-left: 50px;
+        }
+
+        .logo p{
+            margin-left: 10px;
+            margin-bottom:0
+        }
+
+
+        .header-text {
+            text-align: center;
+            padding-right: 8%;
+    
+
+        }
+
+        .header-text h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+
+        .header-text h2 {
+            font-size: 1.2rem;
+            margin-bottom: 0;
+        }
+
+        .header-text p {
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+
+        .header-text h4 {
+            font-size: 1rem;
+        }
+
+        .nav-item{
+          margin-left: 30px; 
+        }
+        .nav-item a {
+            color: #14297a;
+            font-weight: 500;
+        }
+
+        .nav-item a:hover {
+            color: #f4c751;
+            text-decoration: underline;
+        }
+        .navbar{
+          background-color: #e6f1f7;
+        }
+
+        footer{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 40px;
+            background-color: #14297a;
+            color: white;
+            padding-top: 10px;
+        }
+
+        .copyright{
+          text-align:center;
+          margin-bottom: 0;
+          background-color: #f4c751;
+        }
+
+        .footer-column li a {
+          color: white;
+        }
+          /* Sticky Help Button Styles */
+  .sticky-help {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+  }
+
+  .blinking-btn {
+    background-color: rgb(34, 228, 34);
+    color: #14297a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    animation: blink-animation 1.5s infinite;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  @keyframes blink-animation {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .blinking-btn:hover {
+    background-color: #14297a;
+    color: #f4c751;
+  }
+        /* Responsive Adjustments */
+        @media (max-width: 798px) {
+            .header .logo img {
+                max-width: 70px; 
+            }
+
+            .header-text h1 {
+                font-size: 1rem;
+            }
+
+            .header-text p {
+                font-size: 0.5rem;
+            }
+            .header-text h2{
+                font-size: 0.6rem;
+            }
+            .header-text {
+            text-align: center;
+            padding-right: 0;
+            }
+            .logo p{
+            font-size: 12px;
+            margin-left: 8px;
+            margin-bottom:0;
+            font-style:bold;
+            }
+            .logo{
+            padding-left: 0;
+             }
+
+            .nav-item{
+          margin-left: 0px;
+          }
+          footer{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0 5px;
+            overflow: visible;
+            font-size: 0.9rem;
+          }
+          .footer-column h2{
+            font-size: 1.5rem;
+            text-align: center;
+          }
+          .footer-column .btn{
+            font-size: 0.5rem;
+            text-align: center;
+          }
+        }
+        
+    </style>
+</head>                                 
+<body>
+
+    <header class="header d-flex align-items-center">
+        <div class="logo me-3">
+            <img src="./assest/favicon.ico" alt="University Logo">
+            <p>NAAC A++</p>
+        </div>
+        <div class="header-text">
+            <h1>CHAUDHARY CHARAN SINGH UNIVERSITY, MEERUT U.P. INDIA</h1>
+            <p>(Formerly, Meerut University) | NAAC A++ Accredited</p>
+            <h2>Sir Chhotu Ram Institute of Engineering & Technology</h2>
+            <p style="color: #f4c751;">A Three-Day International Conference on "Innovative Computing & Communication in The Field of Life Sciences, Agriculture and Technology"</p>
+        </div>
+    </header>
+
+<!-- navigation bar  -->
+
+    <nav class="navbar navbar-expand-lg bg-body-danger">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./about.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="speaker.html">Speaker </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./about_the_conference.html">About the conference </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./registration.html">Registration </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Organising Committee
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="our_patron.html">Our Patron</a></li>
+                  <li><a class="dropdown-item" href="conference_committee.html">Conference Organizers</a></li>
+                  <li><a class="dropdown-item" href="joint_secretaries.html">Joint Secretaries</a></li>
+                  <li><a class="dropdown-item" href="advisory_committee">Advisory Committee</a></li>
+                  <li><a class="dropdown-item" href="technical_committee.html">Technical Committee</a></li>
+                  <li><a class="dropdown-item" href="repertoire_committee.html">Repertoire Committee</a></li>
+                  <li><a class="dropdown-item" href="scrutiny_committee.html">Scrutiny Committee</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Call for paper
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="call_for_paper.html">Call for paper</a></li>
+                  <li><a class="dropdown-item" href="important_dates.html">Important Dates</a></li>
+                  <li><a class="dropdown-item" href="review_process.html">Review Process</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact_us.html">Contact us </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="reach_us.html">Reach us </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+  
+  
+    <div class="container">
+        <h2 class="text-center my-4" style="text-decoration: underline;">Scrutiny Committee</h2>
+        <div class="container">
+            <div class="card-container">
+                <div class="card">
+                    <h5>Dr. Swati Singh</h5>
+                </div>
+                <div class="card">
+                    <h5>Dr. Monika Gaur</h5>
+                </div>
+                <div class="card">
+                    <h5>Er. Amarjeet Singh</h5>
+                </div>
+                <div class="card">
+                    <h5>Dr. Shashi</h5>
+                </div>
+                <div class="card">
+                    <h5>Dr. Swati Agarwal</h5>
+                </div>
+                <div class="card">
+                    <h5>Dr. Vikas jain</h5>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+
+  <!-- footer  -->
+  <footer>
+    <div class="footer-column">
+      <h2>Committee</h2>
+      <ul>
+        <li><a href="conference_committee.html">Conference Organizers</a></li>
+        <li><a href="advisory_committee.html">Advisory Committee</a></li>
+        <li><a href="our_patron.html">Our Patron</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h2>Important Links</h2>
+      <ul>
+        <li><a href="call_for_paper.html">Call for paper</a></li>
+        <li><a href="registration.html">Registration Information</a></li>
+        <li><a href="review_process.html">Paper Submission</a></li>
+        <li><a href="important_dates.html">Important Dates</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h2>Useful Links</h2>
+       <div class="d-grid gap-2">
+         <a href="https://forms.gle/Yu8p38RPwzEvBrr56"><button class="btn btn-danger" type="button">Registration Link</button></a>
+         <a href="https://chat.whatsapp.com/G4QFPss8DlO9GHQuxCRzLc"><button class="btn btn-success" type="button">Whatsapp Link</button></a>
+       </div>
+    </div>
+  </footer>
+  <p class="copyright">&#169Copyright Protected. Chaudhary Charan Singh University, Meerut</p>
+  <div class="sticky-help">
+    <a href="https://chat.whatsapp.com/G4QFPss8DlO9GHQuxCRzLc"><button class="blinking-btn"><i class="fa-brands fa-whatsapp"></i> Ask for Help</button></a>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
